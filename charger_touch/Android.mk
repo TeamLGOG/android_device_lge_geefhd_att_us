@@ -14,15 +14,17 @@
 # limitations under the License.
 #
 
-# This contains the module build definitions for the hardware-specific
-# components for this device.
-#
-# As much as possible, those components should be built unconditionally,
-# with device-specific names to avoid collisions, to avoid device-specific
-# bitrot and build breakages. Building a component unconditionally does
-# *not* include it on all devices, so it is safe even with hardware-specific
-# components.
+ifneq ($(filter geefhd_att_us,$(TARGET_DEVICE)),)
 
-LOCAL_PATH := $(call my-dir)
+LOCAL_PATH:= $(call my-dir)
 
-include $(call all-makefiles-under,$(LOCAL_PATH))
+include $(CLEAR_VARS)
+LOCAL_SRC_FILES := charger_touch.c
+LOCAL_SHARED_LIBRARIES := libcutils libhardware_legacy
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_PATH := $(TARGET_OUT)/bin
+LOCAL_MODULE := charger_touch
+LOCAL_MODULE_OWNER := lge
+include $(BUILD_EXECUTABLE)
+
+endif

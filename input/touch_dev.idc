@@ -1,5 +1,4 @@
-#
-# Copyright 2012 The Android Open Source Project
+# Copyright (C) 2012 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,17 +11,27 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+
+#
+# Input Device Calibration File for the Mako touch screen.
 #
 
-# This contains the module build definitions for the hardware-specific
-# components for this device.
-#
-# As much as possible, those components should be built unconditionally,
-# with device-specific names to avoid collisions, to avoid device-specific
-# bitrot and build breakages. Building a component unconditionally does
-# *not* include it on all devices, so it is safe even with hardware-specific
-# components.
+device.internal = 1
 
-LOCAL_PATH := $(call my-dir)
+touch.deviceType = touchScreen
+touch.orientationAware = 1
 
-include $(call all-makefiles-under,$(LOCAL_PATH))
+touch.size.calibration = diameter
+touch.size.scale = 22.5
+touch.size.bias = 0
+touch.size.isSummed = 0
+
+touch.pressure.calibration = amplitude
+touch.pressure.scale = 0.0125
+
+touch.orientation.calibration = none
+
+touch.distance.calibration = none
+touch.distance.scale = 1
+
+keyboard.layout = keypad_8064
