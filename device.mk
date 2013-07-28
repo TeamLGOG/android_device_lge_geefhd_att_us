@@ -24,7 +24,7 @@ DEVICE_PACKAGE_OVERLAYS += device/lge/geefhd_att_us/overlay
 DEVICE_PACKAGE_OVERLAYS += device/lge/geefhd-common/overlay
 
 PRODUCT_PACKAGES := \
-	lights.geefhd_att_us
+	lights.msm8960
 
 # Inherit from geefhd-common
 $(call inherit-product, device/lge/geefhd-common/geefhd-common.mk)
