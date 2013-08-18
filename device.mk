@@ -62,7 +62,3 @@ PRODUCT_COPY_FILES += \
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
-
-# CameraHAL
-PRODUCT_PACKAGES += \
-   camera.geefhd_att_us
