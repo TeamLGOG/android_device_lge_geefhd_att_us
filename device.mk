@@ -18,10 +18,7 @@
 $(call inherit-product-if-exists, vendor/lge/geefhd/geefhd-vendor.mk)
 
 ## overlays
-DEVICE_PACKAGE_OVERLAYS += device/lge/geefhd_att_us/overlay
-
-## common overlays
-DEVICE_PACKAGE_OVERLAYS += device/lge/geefhd-common/overlay
+DEVICE_PACKAGE_OVERLAYS := device/lge/geefhd_att_us/overlay
 
 # Inherit from geefhd-common
 $(call inherit-product, device/lge/geefhd-common/geefhd-common.mk)
