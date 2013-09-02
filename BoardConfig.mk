@@ -20,8 +20,8 @@ BOARD_KERNEL_BASE := 0x80200000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
 #BOARD_FORCE_RAMDISK_ADDRESS := 0x82200000
-TARGET_KERNEL_CONFIG := gkatt_bcm-perf_defconfig
-TARGET_KERNEL_SOURCE := kernel/lge/geefhd
+TARGET_KERNEL_CONFIG := cyanogenmod_e980_defconfig
+TARGET_KERNEL_SOURCE := kernel/lge/gproj
 
 
 # inherit from geefhd-common
