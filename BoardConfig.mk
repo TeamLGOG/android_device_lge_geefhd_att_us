@@ -23,6 +23,9 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
 TARGET_KERNEL_CONFIG := cyanogenmod_e980_defconfig
 TARGET_KERNEL_SOURCE := kernel/lge/gproj
 
+# Fstab
+TARGET_RECOVERY_FSTAB = device/lge/geefhd_att_us/ramdisk/fstab.geefhd_att_us
+RECOVERY_FSTAB_VERSION = 2
 
 # inherit from geefhd-common
 -include device/lge/geefhd-common/BoardConfigCommon.mk
