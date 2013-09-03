@@ -21,7 +21,7 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
 #BOARD_FORCE_RAMDISK_ADDRESS := 0x82200000
 TARGET_KERNEL_CONFIG := cyanogenmod_e980_defconfig
-TARGET_KERNEL_SOURCE := kernel/lge/gproj
+TARGET_KERNEL_SOURCE := kernel/lge/geefhd
 
 # Fstab
 TARGET_RECOVERY_FSTAB = device/lge/geefhd_att_us/ramdisk/fstab.geefhd_att_us
