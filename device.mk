@@ -49,6 +49,8 @@ PRODUCT_COPY_FILES += \
     device/lge/geefhd_att_us/ramdisk/ueventd.geefhd_att_us.rc:root/ueventd.geefhd_att_us.rc \
     device/lge/geefhd_att_us/ramdisk/fstab.geefhd_att_us:root/fstab.geefhd_att_us
 
+#TWRP fstab
+PRODUCT_COPY_FILES +=  device/lge/geefhd_att_us/configs/twrp.fstab:recovery/root/etc/twrp.fstab
 
 # NFC Firmware
 PRODUCT_COPY_FILES += \
