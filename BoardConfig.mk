@@ -31,7 +31,7 @@ RECOVERY_FSTAB_VERSION = 2
 -include device/lge/geefhd-common/BoardConfigCommon.mk
 
 # assert
-TARGET_OTA_ASSERT_DEVICE := geefhd,geefhd_att_us,gkatt
+TARGET_OTA_ASSERT_DEVICE := geefhd,geefhd_att_us,gkatt,e988,e980,f240
 
 # inherit from the proprietary version
 -include vendor/lge/geefhd/BoardConfigVendor.mk
